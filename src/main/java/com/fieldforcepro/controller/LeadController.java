@@ -36,14 +36,14 @@ public class LeadController {
 
     @GetMapping
     @Operation(summary = "List leads with filters")
-    public Page<Lead> list(@RequestParam(required = false) LeadStatus status,
-                           @RequestParam(required = false) String assignedAgentId,
-                           @RequestParam(required = false) String source,
-                           @RequestParam(required = false) LeadPriority priority,
-                           @RequestParam(required = false) String search,
-                           @RequestParam(defaultValue = "0") int page,
-                           @RequestParam(defaultValue = "20") int size,
-                           @RequestParam(defaultValue = "createdAt,desc") String sort) {
+    public Page<Lead> list(@RequestParam(name = "status", required = false) LeadStatus status,
+                           @RequestParam(name = "assignedAgentId", required = false) String assignedAgentId,
+                           @RequestParam(name = "source", required = false) String source,
+                           @RequestParam(name = "priority", required = false) LeadPriority priority,
+                           @RequestParam(name = "search", required = false) String search,
+                           @RequestParam(name = "page", defaultValue = "0") int page,
+                           @RequestParam(name = "size", defaultValue = "20") int size,
+                           @RequestParam(name = "sort", defaultValue = "createdAt,desc") String sort) {
         String[] sortParts = sort.split(",");
         Sort s = Sort.by(Sort.Direction.fromString(sortParts[1]), sortParts[0]);
         Pageable pageable = PageRequest.of(page, size, s);

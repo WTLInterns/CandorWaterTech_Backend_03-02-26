@@ -3,6 +3,7 @@ C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\config\OpenApiConfig.ja
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\config\SecurityConfig.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\config\StaticResourceConfig.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\config\WebSocketConfig.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\ActivityController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\AgentController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\AttendanceController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\AuthController.java
@@ -10,9 +11,13 @@ C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\InvoiceContr
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\LeadController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\LocationController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\ProductController.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\ReportController.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\SalesOrderController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\dto\auth\LoginRequest.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\dto\auth\UserDto.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\FieldForceProApplication.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\Activity.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\ActivityStatus.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\AgentProfile.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\AgentStatus.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\AttendanceRecord.java
@@ -32,6 +37,7 @@ C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\Product.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\SalesOrder.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\User.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\UserRole.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\ActivityRepository.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\AttendanceRecordRepository.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\CustomerRepository.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\InvoiceAuditRepository.java
@@ -45,3 +51,4 @@ C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\UserReposito
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\service\AuthService.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\service\EmailService.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\service\InvoiceService.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\service\ReportService.java
