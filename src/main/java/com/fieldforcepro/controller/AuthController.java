@@ -41,7 +41,7 @@ public class AuthController {
         return ResponseEntity.ok(authService.toDto(user));
     }
 
-    public record AgentLoginResponse(String agentId, String name, String email, Integer employeeCode) {}
+    public record AgentLoginResponse(String agentId, String name, String email, String mobile, Integer employeeCode) {}
 
     @PostMapping("/agent-login")
     @Operation(summary = "Agent login with email and password (raw password as stored)")
@@ -60,6 +60,7 @@ public class AuthController {
                 user.getId(),
                 user.getName(),
                 user.getEmail(),
+                user.getMobile(),
                 user.getEmployeeCode()
         ));
     }
