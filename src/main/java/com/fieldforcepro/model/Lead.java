@@ -20,7 +20,6 @@ public class Lead {
     private String id;
 
     private String companyName;
-    private String contactName;
     private String phone;
     private String email;
     private String address;
@@ -29,6 +28,9 @@ public class Lead {
     private String product;
 
     private Integer quantity;
+
+    // Total amount for the lead (quantity * unitPrice)
+    private Double amount;
 
     @Column
     private Double latitude;

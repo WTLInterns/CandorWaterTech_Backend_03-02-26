@@ -7,7 +7,9 @@ C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\ActivityCont
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\AgentController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\AttendanceController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\AuthController.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\FieldAttendanceController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\InvoiceController.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\LeadCommentController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\LeadController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\LocationController.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\controller\ProductController.java
@@ -30,6 +32,7 @@ C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\Invoice.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\InvoiceAudit.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\InvoiceItem.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\Lead.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\LeadComment.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\LeadPriority.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\LeadStatus.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\model\Location.java
@@ -43,6 +46,7 @@ C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\CustomerRepo
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\InvoiceAuditRepository.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\InvoiceItemRepository.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\InvoiceRepository.java
+C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\LeadCommentRepository.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\LeadRepository.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\LocationRepository.java
 C:\FiledForcePro\backend\src\main\java\com\fieldforcepro\repository\ProductRepository.java

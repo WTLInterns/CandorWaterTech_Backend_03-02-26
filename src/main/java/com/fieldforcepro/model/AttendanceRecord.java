@@ -37,6 +37,23 @@ public class AttendanceRecord {
     @Column(nullable = false, length = 50)
     private String status;
 
+    // Work context: e.g. OFFICE, HOME, FIELD
+    @Column(length = 20)
+    private String workType;
+
+    // Optional reason: e.g. LATE, HALF_DAY, etc.
+    @Column(length = 100)
+    private String reason;
+
+    // Optional location for field work
+    private Double latitude;
+
+    private Double longitude;
+
+    // Optional URL or path to an attendance image captured in the field
+    @Column(length = 500)
+    private String imageUrl;
+
     @PrePersist
     public void prePersist() {
         if (id == null) {

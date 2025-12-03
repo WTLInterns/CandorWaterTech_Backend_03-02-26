@@ -16,7 +16,8 @@ public interface LeadRepository extends JpaRepository<Lead, String> {
             "AND (:source IS NULL OR l.source = :source) " +
             "AND (:priority IS NULL OR l.priority = :priority) " +
             "AND (:search IS NULL OR LOWER(l.companyName) LIKE LOWER(CONCAT('%', :search, '%')) " +
-            " OR LOWER(l.contactName) LIKE LOWER(CONCAT('%', :search, '%')))")
+            " OR LOWER(l.email) LIKE LOWER(CONCAT('%', :search, '%')) " +
+            " OR LOWER(l.phone) LIKE LOWER(CONCAT('%', :search, '%')))")
     Page<Lead> searchLeads(@Param("status") LeadStatus status,
                            @Param("assignedAgentId") String assignedAgentId,
                            @Param("source") String source,
