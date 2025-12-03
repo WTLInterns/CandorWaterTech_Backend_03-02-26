@@ -167,6 +167,8 @@ public class FieldAttendanceController {
             @RequestParam("agentName") String agentName,
             @RequestParam(value = "workType", required = false, defaultValue = "FIELD") String workType,
             @RequestParam(value = "reason", required = false) String reason,
+            @RequestParam(value = "latitude", required = false) Double latitude,
+            @RequestParam(value = "longitude", required = false) Double longitude,
             @RequestPart("image") MultipartFile image
     ) {
         if (agentId == null || agentId.isBlank() || agentName == null || agentName.isBlank()) {
@@ -204,6 +206,8 @@ public class FieldAttendanceController {
         record.setStatus("Present");
         record.setWorkType(workType);
         record.setReason(reason);
+        record.setLatitude(latitude);
+        record.setLongitude(longitude);
 
         try {
             String ext = "";
