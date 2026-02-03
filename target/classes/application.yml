@@ -2,9 +2,9 @@ spring:
   application:
     name: fieldforcepro-backend
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/fieldforce}
-    username: ${SPRING_DATASOURCE_USERNAME:root}
-    password: ${SPRING_DATASOURCE_PASSWORD:pass}
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/candorwatertech}
+    username: ${SPRING_DATASOURCE_USERNAME:wtluser}
+    password: ${SPRING_DATASOURCE_PASSWORD:StrongPassword@123}
   jpa:
     hibernate:
       ddl-auto: update
@@ -22,7 +22,7 @@ spring:
     store-type: redis
 
 server:
-  port: 8080
+  port: 8088
   servlet:
     context-path: /api/v1
 
