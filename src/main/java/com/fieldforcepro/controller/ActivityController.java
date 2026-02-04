@@ -34,7 +34,7 @@ public class ActivityController {
     }
 
     public record CreateActivityRequest(
-            String agentId,
+            Long agentId,
             String customerName,
             String activity,
             String status
@@ -53,7 +53,7 @@ public class ActivityController {
     @PostMapping
     @Operation(summary = "Create a new activity from an agent (mobile app)")
     public ResponseEntity<ActivityResponse> create(@RequestBody CreateActivityRequest req) {
-        if (req.agentId() == null || req.agentId().isBlank() || req.activity() == null || req.activity().isBlank()) {
+        if (req.agentId() == null || req.activity() == null || req.activity().isBlank()) {
             return ResponseEntity.badRequest().build();
         }
 

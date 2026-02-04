@@ -19,8 +19,8 @@ public class Activity {
     @Column(length = 36)
     private String id;
 
-    @Column(length = 36, nullable = false)
-    private String agentId;
+    @Column(nullable = false)
+    private Long agentId;
 
     @Column(length = 128)
     private String agentName;

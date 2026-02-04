@@ -46,7 +46,7 @@ public class LocationController {
     }
 
     public record LocationUpdateRequest(
-            String agentId,
+            Long agentId,
             Double latitude,
             Double longitude,
             Float accuracy,

@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.Instant;
-import java.util.UUID;
 
 @Entity
 @Table(name = "locations")
@@ -16,11 +15,11 @@ import java.util.UUID;
 public class Location {
 
     @Id
-    @Column(length = 36)
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    @Column(length = 36, nullable = false)
-    private String agentId;
+    @Column(nullable = false)
+    private Long agentId;
 
     private Double latitude;
     private Double longitude;
@@ -32,9 +31,6 @@ public class Location {
 
     @PrePersist
     public void prePersist() {
-        if (id == null) {
-            id = UUID.randomUUID().toString();
-        }
         if (timestamp == null) {
             timestamp = Instant.now();
         }

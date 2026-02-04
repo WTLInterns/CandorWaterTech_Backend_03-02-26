@@ -36,7 +36,7 @@ public class AgentController {
 
     @GetMapping("/{id}")
     @Operation(summary = "Get agent by id")
-    public ResponseEntity<User> getAgent(@PathVariable("id") String id) {
+    public ResponseEntity<User> getAgent(@PathVariable("id") Long id) {
         Optional<User> user = userRepository.findById(id);
         if (user.isEmpty() || user.get().getRole() != UserRole.AGENT) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
@@ -85,7 +85,7 @@ public class AgentController {
 
     @PutMapping("/{id}")
     @Operation(summary = "Update an agent")
-    public ResponseEntity<User> updateAgent(@PathVariable("id") String id, @RequestBody AgentRequest update) {
+    public ResponseEntity<User> updateAgent(@PathVariable("id") Long id, @RequestBody AgentRequest update) {
         Optional<User> existing = userRepository.findById(id);
         if (existing.isEmpty() || existing.get().getRole() != UserRole.AGENT) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
@@ -107,7 +107,7 @@ public class AgentController {
 
     @PostMapping("/{id}/send-credentials")
     @Operation(summary = "Resend login credentials to an agent via email")
-    public ResponseEntity<Void> resendCredentials(@PathVariable("id") String id) {
+    public ResponseEntity<Void> resendCredentials(@PathVariable("id") Long id) {
         Optional<User> existing = userRepository.findById(id);
         if (existing.isEmpty() || existing.get().getRole() != UserRole.AGENT) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
@@ -120,7 +120,7 @@ public class AgentController {
 
     @DeleteMapping("/{id}")
     @Operation(summary = "Delete an agent")
-    public ResponseEntity<Void> deleteAgent(@PathVariable("id") String id) {
+    public ResponseEntity<Void> deleteAgent(@PathVariable("id") Long id) {
         Optional<User> existing = userRepository.findById(id);
         if (existing.isEmpty() || existing.get().getRole() != UserRole.AGENT) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();

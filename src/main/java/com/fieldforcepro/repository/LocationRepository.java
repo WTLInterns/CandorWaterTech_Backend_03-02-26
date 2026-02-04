@@ -6,9 +6,9 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface LocationRepository extends JpaRepository<Location, String> {
+public interface LocationRepository extends JpaRepository<Location, Long> {
 
-    List<Location> findByAgentId(String agentId);
+    List<Location> findByAgentId(Long agentId);
 
     @Query("SELECT l FROM Location l WHERE l.timestamp = (SELECT MAX(l2.timestamp) FROM Location l2 WHERE l2.agentId = l.agentId)")
     List<Location> findLatestPerAgent();
