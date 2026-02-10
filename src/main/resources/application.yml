@@ -15,9 +15,10 @@ spring:
   flyway:
     enabled: false
     locations: classpath:db/migration
-  redis:
-    host: ${SPRING_REDIS_HOST:localhost}
-    port: ${SPRING_REDIS_PORT:6379}
+  data:
+    redis:
+      host: ${SPRING_REDIS_HOST:localhost}
+      port: ${SPRING_REDIS_PORT:6379}
   session:
     store-type: redis
 

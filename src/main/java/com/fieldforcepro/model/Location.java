@@ -6,7 +6,12 @@ import lombok.*;
 import java.time.Instant;
 
 @Entity
-@Table(name = "locations")
+@Table(
+        name = "locations",
+        indexes = {
+                @Index(name = "idx_locations_agent_time", columnList = "agent_id,timestamp")
+        }
+)
 @Getter
 @Setter
 @NoArgsConstructor
